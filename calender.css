@@ -1,0 +1,106 @@
+
+#container {
+	width:700px;
+	text-align:left; 
+	margin-top:25px;
+	margin-bottom:25px;
+	height:720px;
+	float:left;
+}
+
+#time_container {
+	width:80px; 
+	float:left; 
+	height:100%;
+	margin:0;
+	padding:0;
+	font-size:10px;
+	color:#666;
+}
+
+#time_container ul {
+	margin:-16px 0 0 0;
+	text-align:right;
+	padding:0 5px 0 0; 
+	list-style-type:none;
+	font-size: 12px;
+}
+
+#time_container ul li {
+	line-height:30px;
+	margin:0;
+	padding:0;
+}
+
+#time_container .time_bold {
+	font-weight: bold;
+}
+
+#time_container ul li span {
+	font-weight:normal;
+	font-variant:small-caps;
+}
+
+	
+#content {
+	float:left; /* floats on hours and content divs make them sit side by side */
+	width:620px; /* this width + hours width must total 100% */
+	height:100%;
+	position:relative;
+	background-color:#EEE;
+}
+
+#content_inner {
+	padding:0 10px;
+	margin: 0;
+	width:100%;
+	float:left;
+	height:100%;
+}
+
+/*page design layout ends here*/
+
+
+/*event styling starts here*/
+#content div.event {
+	position:absolute;
+	float:left;
+ 
+	/*The following properties are set by javascript function display_Events() within display_event.js:	*/
+  top: 120px;
+	left: 10px;
+	height:50px;
+	width: 600px;
+	
+	background-color:#FFF;
+	color:#028;
+}
+
+#content div.event_inner {
+	border-left:3px solid #26F;
+	border-top:1px solid #EEE;
+	border-right:1px solid #EEE;
+	border-bottom:1px solid #EEE;
+	height:100%;
+}
+
+#content_inner, .event_inner {
+	overflow:hidden; 
+}
+	
+
+#content div.event h2 {
+	font-size:.8em;
+	margin-top:5px;
+	margin-left:8px;
+	color:#069;
+}
+
+p  {
+	font-size:.6em; 
+	line-height:1.25;
+	margin:0 0 0 8px;
+	height:100%;
+	color:#333;
+}
+
